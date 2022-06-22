@@ -1,0 +1,11 @@
+class Solution
+{
+    public int gcd(int A , int B) 
+    { 
+        //code here
+        if(B == 0)
+            return A;
+        
+        return gcd(B, A % B);
+    } 
+}
